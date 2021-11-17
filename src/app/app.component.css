@@ -1,0 +1,6 @@
+.jogo {
+  display: grid;
+  max-width: 600px;
+  margin: 10% auto;
+  background-color: rgba(0, 0, 0, 0.89);
+}

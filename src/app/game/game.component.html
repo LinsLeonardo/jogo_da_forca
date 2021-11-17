@@ -1,0 +1,44 @@
+<div class="jogo">
+
+  <div>
+    <h1>Descubra a Palavra:</h1>
+    <h1 class="palavra">{{palavraEscondida}}</h1>
+  </div>
+  <div class="erros">
+    <h2>ERROS:</h2>
+
+    <p>{{ erros}}/5</p>
+  </div>
+</div>
+<form [formGroup]="formulario" class="formulario" (ngSubmit)="submit()">
+  <div class="botoes">
+    <button type="button" value="a" #refA id="a" class="ativo letras" (click)="add('a', refA.value)">A</button>
+    <button type="button" value="b" class="ativo letras" id="b" #refB (click)="add('b', refB.value)">B</button>
+
+    <button type="button" value="c" class="ativo letras" id="c" #refC (click)="add('c', refC.value)">C</button>
+    <button type="button" value="d" class="ativo letras" id="d" #refD (click)="add('d', refD.value)">D</button>
+    <button type="button" value="e" class="ativo letras" id="e" #refE (click)="add('e', refE.value)">E</button>
+    <button type="button" value="f" class="ativo letras" id="f" #refF (click)="add('f', refF.value)">F</button>
+    <button type="button" value="g" class="ativo letras" id="g" #refG (click)="add('g', refG.value)">G</button>
+    <button type="button" value="h" class="ativo letras" id="h" #refH (click)="add('h', refH.value)">H</button>
+    <button type="button" value="i" class="ativo letras" id="i" #refI (click)="add('i', refI.value)">I</button>
+    <button type="button" value="j" class="ativo letras" id="j" #refJ (click)="add('j', refJ.value)">J</button>
+    <button type="button" value="k" class="ativo letras" id="k" #refK (click)="add('k', refK.value)">K</button>
+    <button type="button" value="l" class="ativo letras" id="l" #refL (click)="add('l', refL.value)">L</button>
+    <button type="button" value="m" class="ativo letras" id="m" #refM (click)="add('m', refM.value)">M</button>
+    <button type="button" value="n" class="ativo letras" id="n" #refN (click)="add('n', refN.value)">N</button>
+    <button type="button" value="o" class="ativo letras" id="o" #refO (click)="add('o', refO.value)">O</button>
+    <button type="button" value="p" class="ativo letras" id="p" #refP (click)="add('p', refP.value)">P</button>
+    <button type="button" value="q" class="ativo letras" id="q" #refQ (click)="add('q', refQ.value)">Q</button>
+    <button type="button" value="r" class="ativo letras" id="r" #refR (click)="add('r', refR.value)">R</button>
+    <button type="button" value="s" class="ativo letras" id="s" #refS (click)="add('s', refS.value)">S</button>
+    <button type="button" value="t" class="ativo letras" id="t" #refT (click)="add('t', refT.value)">T</button>
+    <button type="button" value="u" class="ativo letras" id="u" #refU (click)="add('u', refU.value)">U</button>
+    <button type="button" value="v" class="ativo letras" id="v" #refV (click)="add('v', refV.value)">V</button>
+    <button type="button" value="w" class="ativo letras" id="w" #refW (click)="add('w', refW.value)">W</button>
+    <button type="button" value="x" class="ativo letras" id="x" #refX (click)="add('x', refX.value)">X</button>
+    <button type="button" value="y" class="ativo letras" id="y" #refY (click)="add('y', refY.value)">Y</button>
+    <button type="button" value="z" class="ativo letras" id="z" #refZ (click)="add('z', refZ.value)">Z</button>
+  </div>
+
+</form>
