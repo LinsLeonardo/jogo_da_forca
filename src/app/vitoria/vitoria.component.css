@@ -22,7 +22,7 @@ div.img {
 }
 
 #titulo {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 button {
@@ -37,4 +37,11 @@ button {
 button:hover {
   background-color: whitesmoke;
   color: black;
+}
+
+h2#palavra {
+  margin-bottom: 20px;
+  color: #6fc28a;
+  font-weight: bold;
+  font-size: 2rem;
 }

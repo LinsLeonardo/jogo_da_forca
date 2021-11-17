@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,11 +8,19 @@ import { Router } from '@angular/router';
 })
 export class ResultadoComponent implements OnInit {
 
+  palavra!: String; 
+
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.recuperaPalavra()
   }
 
+  recuperaPalavra(): any{
+  
+    this.palavra = JSON.parse(sessionStorage.getItem("jogodaforca") ?? "[]");
+    console.log('palavra' + this.palavra)
+  }
   novoJogo(){
     this.router.navigate(['/'])
   }

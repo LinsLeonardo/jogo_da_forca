@@ -25,12 +25,16 @@ export class GameComponent implements OnInit {
   letrasErradas: String[] = [];
 
 
+
   constructor(private formBuilder: FormBuilder, private router: Router, private route: ActivatedRoute) {
     for(const letra of this.palavraAleatoria){
       this.palavraEscondida += '_ '
     }
   }
 
+  salvaPalavra(){
+    sessionStorage.setItem('jogodaforca', JSON.stringify(this.palavraAleatoria))
+  }
   geraPalavra() {
     const index = Math.floor(Math.random() * this.palavras.length);
     const palavraAleatoria = this.palavras[index]; 
@@ -47,6 +51,7 @@ export class GameComponent implements OnInit {
     botao?.classList.remove('ativo')
 
     this.letraAtual = letra
+    this.salvaPalavra()
     this.verificaTodasAsLetras(letra)
     this.verificarLetras()
     this.verificaFimDeJogo()
