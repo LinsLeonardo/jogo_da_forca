@@ -13,7 +13,7 @@ export class GameComponent implements OnInit {
 
   formulario!: FormGroup;
 
-  palavras: String[] = ['bicicleta', 'carro', 'cantora', 'felicidade', 'fundamental', 'colesterol', 'travesseiro', 'pernilongo'];
+  palavras: String[] = ['bicicleta', 'carro', 'cantora', 'felicidade', 'fundamental', 'colesterol', 'travesseiro', 'pernilongo', 'liberdade', 'gravata', 'paralama', 'fantasma', 'seta', 'camisola', 'desajeitado', 'remexer','trecho', 'interceptar', 'rejeitar', 'temporada', 'nariz', 'traje', 'antiguidade', 'diferencial', 'cana', 'chupeta', 'coiote', 'defensoria','concerto', 'concreto', 'significado', 'garrafa', 'aluguel', 'suspeito', 'cachoeira', 'cotovelo', 'compartimento', 'revistar', 'cravo', 'acoplado', 'detonar', 'temporizador', 'embaixador', 'vinho',  'radiante', 'preservar', 'batata', 'assistente', 'semanas', 'poltrona', 'transportar', 'escuro', 'serpente', 'recipiente', 'procriar', 'colapso', 'cogumelo', 'fuga', 'ostra', 'lambida', 'estofar', 'vizinho', 'cirurgia', 'desfile', 'massagem', 'rena', 'conectar', 'inseticida', 'investimento', 'original', 'giz', 'lenda', 'prisma', 'aliado', 'desenhar', 'almanaque', 'capacho', 'patela', 'rochas', 'digerir', 'neta', 'lanterna', 'liderar', 'selos', 'grupo', 'desajeitado', 'acampamento', 'acompanhante', 'mostra', 'mosquiteiro', 'desaparecer', 'aquecimento'];
   
   palavraEscondida = '';
   
