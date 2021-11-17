@@ -20,7 +20,6 @@ export class VitoriaComponent implements OnInit {
   recuperaPalavra(): any{
   
     this.palavra = JSON.parse(sessionStorage.getItem("jogodaforca") ?? "[]");
-    console.log('palavra' + this.palavra)
   }
   novoJogo(){
     this.router.navigate(['/'])
